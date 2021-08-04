@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-project1';
+
+  
+  public message:string="Color Tool";
+
+   public colors:string[]=[
+     "Black","Red","Blue","Green","Yellow",
+   ];
+
+   public newColor:string="";
+
+
+   public addColor(){
+     this.colors.push(this.newColor);
+   }
 }
